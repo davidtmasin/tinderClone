@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <i class="fas fa-comments" onclick="notificationSong.play()"></i>
+        <i class="fas fa-fire"></i>
+        <i class="fas fa-user"></i>
+    </nav>
+    <div class="photo-actions">
+        <div class="photo">
+            <div class="photo-text">
+                <div class="name-age">
+                    <h2>David</h2>
+                    <h2>29</h2>
+                </div>
+                <div class="bio">
+                    IT Professional and Programming Student. Mais informações aqui só para preencher espaço.
+                </div>
+            </div>
+        </div>
+        <div class="actions" >
+            <div class="action">
+                <i class="fas fa-times" onclick="rejectSong.play()"></i>
+            </div>
+            <div class="action">
+                <i class="fas fa-star" onclick="starSong.play()"></i>
+            </div>
+            <div class="action">
+                <i class="fas fa-heart" onclick="approvesSong.play()"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    
+
+    const rejectSong = new Audio()
+    const approvesSong = new Audio()
+    const starSong = new Audio()
+    const notificationSong = new Audio()
+
+    rejectSong.src = './audio/no.m4a'
+    approvesSong.src = './audio/yes.m4a'
+    starSong.src = './audio/star.m4a'
+    notificationSong.src = './audio/notification.m4a'
+
+    </script>
+</body>
+</html>
